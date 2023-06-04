@@ -5,7 +5,7 @@ import EmailContext from "../context/email";
 function SuccessPage({ setShowPage }) {
     
     function handleClcik() {
-        setShowPage(null);
+        setShowPage("SubscribePage");
     }
 
     const { email } = useContext(EmailContext);
