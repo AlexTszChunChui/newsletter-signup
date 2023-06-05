@@ -4,8 +4,7 @@ import { useState } from "react";
 
 function App() {
   const [showPage, setShowPage] = useState("SubscribePage");
-  const [email, setEmail] = useState("");
-  
+
   let content
 
   if (showPage === "SubscribePage") {
