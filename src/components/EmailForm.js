@@ -15,21 +15,21 @@ function EmailForm({setShowPage}) {
   }
 
   return (
-    <form className="row needs-validation" onSubmit={handleSubmit} noValidate>
-      <div>
-        <label className="mb-2" htmlFor="email" id="email-label">Email address</label>
+    <form onSubmit={handleSubmit} noValidate>
+      <div className="space-y-3">
+        <label className="text-sm font-bold" htmlFor="email" id="email-label">Email address</label>
         <input
           id="email"
           name="email"
-          className="cursor-pointer form-control mb-2"
           type="email"
           value={email}
+          className="block w-full border-2 rounded-lg p-4"
           placeholder="email@company.com"
           onChange={handleChange}
           required
         ></input>
-        <div className="valid-feedback">Looks Good!</div>
-        <button className="btn btn-dark mt-3">
+        <button className="bg-[#242742] w-full rounded-lg py-4 px-auto block text-white
+        hover:bg-gradient-to-r from-[#ff5478] to-[#ff673e]">
           Subscribe to monthly newsletter
         </button>
         </div>

@@ -17,7 +17,7 @@ function App() {
   
   
   return (
-    <div className="container d-flex">
+    <div className="bg-[#242742]">
         {content}
     </div>
   );
