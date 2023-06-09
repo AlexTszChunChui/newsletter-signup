@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/newsletter-signup/static/css/main.cd6c8abc.css",
-    "main.js": "/newsletter-signup/static/js/main.f4fd8149.js",
+    "main.css": "/newsletter-signup/static/css/main.5d471f69.css",
+    "main.js": "/newsletter-signup/static/js/main.914959b6.js",
     "static/media/illustration-sign-up-desktop.svg": "/newsletter-signup/static/media/illustration-sign-up-desktop.ce2024babf0bc98a8862252535b544c9.svg",
     "index.html": "/newsletter-signup/index.html",
     "static/media/icon-success.svg": "/newsletter-signup/static/media/icon-success.1ad016255f85fa877dc6bee8c9621535.svg",
     "static/media/icon-list.svg": "/newsletter-signup/static/media/icon-list.5e317c030bb9f11a33433484a2c590e1.svg",
-    "main.cd6c8abc.css.map": "/newsletter-signup/static/css/main.cd6c8abc.css.map",
-    "main.f4fd8149.js.map": "/newsletter-signup/static/js/main.f4fd8149.js.map"
+    "main.5d471f69.css.map": "/newsletter-signup/static/css/main.5d471f69.css.map",
+    "main.914959b6.js.map": "/newsletter-signup/static/js/main.914959b6.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd6c8abc.css",
-    "static/js/main.f4fd8149.js"
+    "static/css/main.5d471f69.css",
+    "static/js/main.914959b6.js"
   ]
 }
