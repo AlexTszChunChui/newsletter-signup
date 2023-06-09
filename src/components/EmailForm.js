@@ -15,7 +15,7 @@ function EmailForm({setShowPage}) {
   }
 
   return (
-    <form onSubmit={handleSubmit} noValidate>
+    <form onSubmit={handleSubmit}>
       <div className="space-y-3">
         <label className="text-sm font-bold" htmlFor="email" id="email-label">Email address</label>
         <input
@@ -23,9 +23,9 @@ function EmailForm({setShowPage}) {
           name="email"
           type="email"
           value={email}
-          className="block w-full border-2 rounded-lg p-4"
+          className="block w-full border-2 rounded-lg p-4 cursor-pointer"
           placeholder="email@company.com"
-          onChange={handleChange}
+          onChange={handleChange}  
           required
         ></input>
         <button className="bg-[#242742] w-full rounded-lg py-4 px-auto block text-white

@@ -17,7 +17,7 @@ function App() {
   
   
   return (
-    <div className="bg-[#242742]">
+    <div className="bg-[#242742] flex items-center justify-center h-screen">
         {content}
     </div>
   );
