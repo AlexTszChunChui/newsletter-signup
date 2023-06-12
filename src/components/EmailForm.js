@@ -1,10 +1,24 @@
 import { useContext } from "react";
 import EmailContext from "../context/email";
 import Schema from "../Validation";
+import classNames from "classnames";
 
 function EmailForm({setShowPage}) {
 
   const { email, changeEmail, error, changeError } = useContext(EmailContext);
+
+  const inputClassNames = classNames(
+    'block',
+    'w-full',
+    'border-2',
+    'rounded-lg',
+    'p-4',
+    'cursor-pointer',
+    {'border-red-500' : error,
+     'bg-red-100' : error
+    }
+  );
+
   
   function handleSubmit(event) {
     event.preventDefault();
@@ -35,7 +49,7 @@ function EmailForm({setShowPage}) {
           name="email"
           type="email"
           value={email}
-          className="block w-full border-2 rounded-lg p-4 cursor-pointer"
+          className={inputClassNames}
           placeholder="email@company.com"
           onChange={handleChange}
         ></input>
