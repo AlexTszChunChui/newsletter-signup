@@ -4,12 +4,15 @@ const EmailContext = createContext();
 
 function Provider({ children }) {
     const [email, setEmail] = useState("");
+    const [error, setError] = useState(null);
 
     const value = {
         email,
+        error,
         changeEmail: (email) => {
             setEmail(email);
-        }
+        },
+        changeError: (err) => setError(err)
     };
 
     return (
