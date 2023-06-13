@@ -8,15 +8,18 @@ function EmailForm({setShowPage}) {
   const { email, changeEmail, error, changeError } = useContext(EmailContext);
 
   const inputClassNames = classNames(
+    'focus:outline-none',
+    {
+    'ring-2': error,
+    'ring-red-500' : error,
+    'bg-red-100' : error,
+   },
     'block',
     'w-full',
     'border-2',
     'rounded-lg',
     'p-4',
     'cursor-pointer',
-    {'border-red-500' : error,
-     'bg-red-100' : error
-    }
   );
 
   

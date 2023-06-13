@@ -10,13 +10,16 @@ function SuccessPage({ setShowPage }) {
   const { email } = useContext(EmailContext);
 
   return (
-    <div className="bg-white flex flex-col space-y-10 md:px-20 md:py-16 max-w-xl rounded-3xl">
+    <div className="bg-white flex flex-col justify-between h-2/3 pt-32 pb-12 px-12 space-y-10 max-w-xl 
+    md:px-20 md:py-16 md:rounded-3xl md:justify-center md:p-auto md:h-auto">
+      <div className="space-y-10">
       <img className="object-fit h-16 w-16" src={iconSuccess} alt="iconSuccess"></img>
       <h1 className="text-6xl font-bold text=[#242742]">Thanks for subscribing!</h1>
       <p>
         A confirmation email has been sent to <span className="font-bold"> {email} </span>. Please open it and click
         the button inside to confirm your subscription
       </p>
+      </div>
       <div>
         <button
           className="bg-[#242742] w-full rounded-lg py-4 px-auto text-white
